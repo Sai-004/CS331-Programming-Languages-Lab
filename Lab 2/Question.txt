@@ -1,0 +1,21 @@
+Allotted Question:
+
+Write a Java program that simulates a library system with multiple reading rooms, bookshelves and readers. 
+The library has a fixed number of reading rooms where readers can enter and a fixed number of bookshelves where they can borrow books.
+Readers arrive at the library and attempt to enter through one of the reading rooms. 
+Once inside, they proceed to borrow books from one of the available bookshelves. 
+Bookshelves  have a maximum capacity and readers must wait if all shelves are occupied. 
+Each bookshelf can serve one reader at a time and multiple readers cannot access the same shelf simultaneously. 
+Use Java threads to model readers entering the library and borrowing books.
+
+
+Requirements:
+
+1. Create a ‘Library’ class that manages the reading rooms and bookshelves.
+2. Implement a ‘ReadingRoom’ class that represents a reading room. Readers should enter through one of the reading rooms.
+3. Implement a ‘Bookshelf’ class that represents a bookshelf. Each shelf can serve one reader at a time.
+4. Implement a ‘Reader’ class that represents a reader. Readers enter through a reading room and then proceed to borrow books.
+5. The library should have a maximum number of readers it can serve concurrently, and readers must wait if all bookshelves are occupied.
+6. Use threads to run multiple instances of reading rooms, bookshelves and readers concurrently.
+7. The program should continue running indefinitely.
+8. Ensure proper synchronization mechanisms to manage the flow of readers and avoid race conditions.
