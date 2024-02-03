@@ -3,9 +3,24 @@
 ## Overview
 This Java code simulates a basic library system with reading rooms and bookshelves, providing a multi-threaded environment to mimic the activities of readers in a controlled setting. The simulation employs semaphores to manage access to reading rooms and bookshelves, ensuring that the library operates efficiently and within capacity limits.
 
+## Table of Contents
+- [Library Simulation Readme](#library-simulation-readme)
+  - [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+  - [Classes](#classes)
+    - [Library](#library)
+    - [ReadingRoom](#readingroom)
+    - [Bookshelf](#bookshelf)
+    - [Reader](#reader)
+    - [LibrarySimulation](#librarysimulation)
+  - [How to Run](#how-to-run)
+  - [Assumptions](#assumptions)
+  - [Important Notes](#important-notes)
+
+
 ## Classes
 
-### 1. Library
+### Library
 - **Responsibility:** Manages the entire library system, including reading rooms and bookshelves.
 - **Key Components:**
   - Semaphores to control access to reading rooms and bookshelves.
@@ -16,7 +31,7 @@ This Java code simulates a basic library system with reading rooms and bookshelv
   - `getBookshelf()`: Acquires a bookshelf, allowing a reader to borrow a book.
   - `returnBookshelf(Bookshelf bookshelf)`: Returns a bookshelf, indicating the book has been returned.
 
-### 2. ReadingRoom
+### ReadingRoom
 - **Responsibility:** Represents a reading room in the library.
 - **Key Components:**
   - Synchronization to control access and limit the number of readers inside.
@@ -25,7 +40,7 @@ This Java code simulates a basic library system with reading rooms and bookshelv
   - `leave()`: Leaves the reading room, notifying waiting readers that a slot is available.
   - `getCurrentReaders()`: Returns the current number of readers in the reading room.
 
-### 3. Bookshelf
+### Bookshelf
 - **Responsibility:** Represents a bookshelf in the library.
 - **Key Components:**
   - Semaphore to control access and limit the number of readers borrowing books.
@@ -33,12 +48,12 @@ This Java code simulates a basic library system with reading rooms and bookshelv
   - `tryEnter()`: Tries to enter the bookshelf, returns true if successful.
   - `leave()`: Leaves the bookshelf, indicating the book has been returned.
 
-### 4. Reader
+### Reader
 - **Responsibility:** Represents a reader thread in the library.
 - **Methods:**
   - `run()`: Simulates a reader's activities in the library, including entering reading rooms, borrowing books, and returning to the library.
 
-### 5. LibrarySimulation
+### LibrarySimulation
 - **Responsibility:** Main class to run the library simulation.
 - **Key Components:**
   - User input for the number of reading rooms, bookshelves, and maximum readers per reading room.

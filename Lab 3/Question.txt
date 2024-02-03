@@ -1,0 +1,27 @@
+Allotted Question:
+
+House Building Simulation Problem Using Multithreading and Barrier Synchronization in Java
+Consider a scenario where a team of workers is assigned to build a house. Building a house can be divided into distinct stages. 
+It is necessary that all workers need to complete the current stage before moving onto the next one. 
+Your task is to simulate this process of building house using concept of multithreading and barrier synchronization.
+Total no. of stages are 5. Digging, Building a foundation, Building walls, Building roofs, Finishing.
+
+
+Requirements:
+1. Allow user to input no. of worker threads.
+2.Implement barrier synchronization to ensure that all worker complete current stage to proceeding to the next stage
+3.Print message indicating complete of stage after completing the current stage with time.
+4.A worker thread takes random time to complete a stage (between 500 to 1000 milliseconds).
+5.A worker thread must print the time when it starts to work on current stage and time he took to complete current stage.
+6.Use appropriate synchronization mechanisms to avoid race conditions.
+
+
+Testing:
+- Ensure barrier synchronization prevents workers from proceeding to the next stage until all workers complete the current stage.
+- Observe timestamps for the start and completion of each stage.
+- Verify correct functioning with user-specified number of worker threads.
+
+
+Note: You can use following libraries to print and format time.
+import java.text.SimpleDateFormat;
+import java.util.Date;
