@@ -1,0 +1,27 @@
+Allotted Question:
+
+Multithreaded Database Concurrency Control Scenario
+Consider a scenario where you are tasked with designing a Java application to simulate a database system with multiple concurrent transactions. 
+The primary objective is to implement a basic form of database concurrency control using multithreading. 
+This simulation should emulate a realistic environment where various transactions (reads and writes) may occur simultaneously, and your goal is to ensure the correctness and consistency of the database.  
+
+
+Implementation Requirements:  
+
+- Database Schema:  
+Users (UserID, UserName, Email)  
+Orders (OrderID, UserID, Product, Quantity)  
+
+- Database Initialization:  
+Design a class, DatabaseInitializer, to initialize the database with sample data. Populate both the Users and Orders tables with meaningful entries.  
+
+- Database Operations:  
+Implement a class, DatabaseOperations, with methods for read and write operations on the database. Consider methods like readUserDetails, writeOrder, etc.  
+
+- Concurrency Control:  
+Design the Database class, which will manage the entire database system.  
+Implement a concurrency control mechanism to ensure consistency during concurrent transactions. Choose a suitable strategy (e.g., locking, optimistic concurrency control) and explain the reasoning behind your choice.  
+
+- Multithreaded Transactions:  
+Develop the DatabaseTransaction class, representing an individual transaction. Each transaction should perform a series of read and/or write operations on the database.  
+Ensure transactions are isolated from each other to prevent interference.
