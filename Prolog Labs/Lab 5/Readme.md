@@ -17,7 +17,7 @@ A BST is a binary tree where the left subtree of each node contains only nodes w
 
 ## Commands to Run
 
-```bash
+```prolog
 swipl -s bst.pl
 ```
 
