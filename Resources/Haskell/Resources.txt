@@ -1,0 +1,9 @@
+Resources on Haskell have been attached herewith for your reference:
+
+https://www.haskell.org/documentation/
+
+https://wiki.haskell.org/Learning_Haskell
+
+https://learnyouahaskell.com/chapters
+
+You may go through these alongside other resources and tutorials available on the web in order to prepare for the lab sessions.
